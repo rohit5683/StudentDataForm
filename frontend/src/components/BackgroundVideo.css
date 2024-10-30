@@ -1,0 +1,31 @@
+/* Container to position video and overlay content */
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fullscreen background video */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers entire container */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Sends the video behind other content */
+}
+
+/* Overlay content styling */
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 100%;
+}

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+.section_one {
+  margin: 100px;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.section_one h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .section_two {
+  margin: 100px;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 10px;
+}
+.container .section_two h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.student-form input,
+.student-form button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
